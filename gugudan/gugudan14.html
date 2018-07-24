@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <h2>객체로 구구단 구현하기1-14</h2>
+    <h3>html화면에 2단에서 9단 까지에 구구단을 구현한다.</h3>
+    <script>
+        gugudan = {}
+        gugudan.print = function print(n) {
+            document.write("<h4>" + n + "단</h4>");
+            for (var i = 1; i <= 9; i++) {
+                var results = [];
+                results[i] = i * n;
+                document.write(n + " * " + i + " = " + results[i] + "<br>");
+            }
+            return ;
+        }
+        gugudan.main = function main() {
+            document.write("함수가 실행 되었습니다.<br>");
+            for (var n = 2; n <= 9; n++) {
+                gugudan.print(n);
+            }
+            document.write("함수가 끝났습니다.");
+        }
+        gugudan.main();
+    </script>
+</body>
+
+</html>

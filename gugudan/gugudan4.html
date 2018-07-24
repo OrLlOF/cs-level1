@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <h2>구구단 4,5단 구현하기1-4</h2>
+    <h3>html화면에 구구단 4단 또는 5단을 출력하기</h3>
+    <script>
+        var num4 = 4;
+        var num5 = 5;
+        var num = prompt("몇 단을 출력하실 건가요?");
+        document.write(num + "단<br>");
+        var number = parseInt(num, 10);
+        if (number === 4) {
+            for (var i = 1; i < 10; i++) {
+                var result = num4 * i;
+                document.write(num4 + " * " + i + " = " + (num4 * i) + "<br>");
+            }
+        } else {
+            for (var i = 1; i < 10; i++) {
+                var result = num5 * i;
+                document.write(num5 + " * " + i + " = " + (num5 * i) + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

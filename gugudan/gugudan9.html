@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>배열을 통해 구구단 구현하기1-9</h2>
+    <h3>콘솔에 2단에서 9단 까지에 구구단을 구현한다.</h3>
+    <script>
+        var results = [];
+        for (var i = 2; i <= 9; i++) {
+            for (var j = 1; j <= 9; j++) {
+                results[j] = i * j;
+            }
+            console.log(i + "단");
+            for(var j = 1; j <= 9; j++){
+                console.log(i + " * " + j + " = " + results[j]);
+            }
+        }
+    </script>
+</body>
+
+</html>
