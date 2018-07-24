@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>if1-2</h2>
+    <h3>입력받은 문자가 대문자로 되어 있는지 소문자로 되어 있는지 또는 그 외인지를 알려주는 프로그램</h3>
+    <script>
+        var N = prompt("문자를 영어로 입력해주세요.");
+        var un = N.toUpperCase();
+        var ln = N.toLowerCase();
+        if(N === un){
+            console.log("대문자 문장입니다.");
+        }else if(N === ln){
+            console.log("소문자 문장입니다.");
+        }else{
+            console.log("보통 문장입니다.");
+        }
+    </script>
+</body>
+</html>
