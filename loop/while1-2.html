@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>while문1-2</h2>
+    <h3>입력한 수들의 갯수와 합을 구하는 프로그램</h3>
+    <script>
+        var sum = 0;
+        var count = -1;
+        var userInput = null;
+        while(userInput!=0){
+            var userInput = prompt("숫자를 입력해주세요.\n 0을 입력하면 종료됩니다.");
+            var userNumber = parseInt(userInput, 10);
+            sum = sum + userNumber;
+            count++;
+        }
+        console.log("입력한 수의 갯수" + count);
+        console.log("입력한 수의 합" + sum);
+    </script>
+</body>
+</html>
