@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>연습문제3</h2>
+    <h3>1~10000 사이의 소수를 모두 출력하기</h3>
+    <script>
+        var numbers = {};
+        numbers.all = [];
+        numbers.prime = [];
+        numbers.isPrime = function(number) {z
+            for(var i = 2; i <= number; i++) {
+                if(number % i === 0){
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

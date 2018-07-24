@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>연습문제 1-2</h2>
+    <h3>BMI를 계산하는 프로그램을 작성해 봅시다.</h3>
+    <script>
+        var m = prompt("키를 Meter로 입력해 주세요.");
+        var kg = prompt("몸무게를 kg로 입력해 주세요.");
+        // var nm = parseInt(m, 10);
+        // var nkg = parseInt(kg, 10);
+        var nm = parseFloat(m);
+        var nkg = parseFloat(kg);
+        console.log("nm", nm);
+        console.log("nkg", nkg);
+        console.log("당신의 BMI 지수는 " + (nkg / (nm * nm)) + " 입니다.");
+    </script>
+</body>
+</html>
