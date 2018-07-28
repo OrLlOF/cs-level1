@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>두 수의 최대공약수를 출력하시오</title>
+</head>
+<body>
+    <h2>두 수의 최대공약수를 출력하시오</h2>
+    <script>
+        var a = parseInt(prompt("첫번째 숫자를 입력해주세요."), 10);
+        var b = parseInt(prompt("두번째 숫자를 입력해주세요."), 10);
+        document.write(a + " 과/와 " + b + "의 최대공약수<br>");
+        var result = 0;
+        while(a != b) {
+            if(a > b) {
+                a = a - b;
+            } else if (b > a) {
+                b = b - a;
+            }
+        }
+        document.write(a);
+    </script>
+</body>
+</html>
